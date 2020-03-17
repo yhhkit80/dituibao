@@ -1,0 +1,50 @@
+<view>
+
+  <van-sticky offset-top="{{0}}">
+    <view class="flex padding-0-10 bg-white">
+      <van-search
+          class="search-input"
+          value="{{ value }}"
+          placeholder="请输入搜索关键词"
+          bind:search="fnSearch"
+      />
+      <view class="more"><text class="iconfont icon-gengduo" bindtap="addCustomer"></text></view>
+    </view>
+  </van-sticky>
+
+  <van-action-sheet
+      show="{{ show }}"
+      round="{{round}}"
+      actions="{{ actions }}"
+      bind:close="onClose"
+      bind:select="onSelect"
+  />
+
+  <!--底部的tabbar-->
+
+  <!--<tabbar  tabbar="{{tabbar}}"></tabbar>-->
+
+
+  <!--列表开始-->
+  <!--index.wxml-->
+  <view>
+    <!--垂直滚动，这里必须设置高度-->
+    <view class="item flex" wx:for="{{list}}" wx:key="index">
+      <view class="left">
+        <text class="title">{{item.name}}</text>
+        <text class="description">{{item.short_description}}</text>
+      </view>
+      <view class="actions">
+        <text data-phone="134xxx" bindtap="fnCall" class="iconfont icon-phone phone"></text>
+        <text bindtap="fnGo" data-longitude="{{118.24789}}" data-latitude="{{24.6196}}" class="iconfont icon-route"></text>
+      </view>
+    </view>
+
+    <view class="body-view">
+      <loading hidden="{{hidden}}" bindchange="loadingChange">
+        加载中...
+      </loading>
+    </view>
+  </view>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

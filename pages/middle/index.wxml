@@ -1,0 +1,4 @@
+<view class="bgMap" hover-class="none" hover-stop-propagation="false">
+
+  <map id="map" class="bgMap" longitude="{{longitude}}" latitude=" {{latitude}}" markers="{{markers}}" scale="13" show-location></map>
+</view>

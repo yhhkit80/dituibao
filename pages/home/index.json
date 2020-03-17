@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "地推宝",
+  "usingComponents": {
+    "cust-list": "../../components/cust-list/index",
+    "tabbar": "../../components/tab-bar-component/index"
+  }
+}

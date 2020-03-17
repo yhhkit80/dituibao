@@ -1,0 +1,22 @@
+<view class="cust-list-page">
+  <view class="cust-list__title">
+    <image mode="aspectFit" class="cust-list__image" src="https://img.yzcdn.cn/vant/logo.png"/>
+    <view class="cust-list__text">客户管理</view>
+  </view>
+
+  <view
+      wx:for="{{ list }}"
+      wx:key="index"
+      class="cust-list-item"
+  >
+    <van-cell-group border="{{ false }}">
+      <van-cell title="{{ item.name }}" center label="{{ item.distance }}" border="{{ false }}">
+        <view slot="right-icon">
+          <van-icon bind:click="onSelectMobile" data-mobile="{{ item.mobile }}" name="phone-circle-o"
+                    class="custom-icon" color="#08e" size="26px"/>
+          <van-icon slot="right-icon" name="search" class="custom-icon" color="#08e" size="26px"/>
+        </view>
+      </van-cell>
+    </van-cell-group>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+.cust-list-page {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: #fff;
+}
+
+.cust-list__title,
+.cust-list__desc {
+  padding-left: 16px;
+  font-weight: normal;
+  line-height: 1;
+  user-select: none;
+}
+
+.cust-list__title {
+  margin: 0 0 16px;
+  font-size: 32px;
+}
+
+.cust-list__image,
+.cust-list__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cust-list__image {
+  width: 32px;
+  height: 32px;
+}
+
+.cust-list__text {
+  margin-left: 16px;
+  font-weight: 500;
+}
+
+.cust-list__title .demo-home--small {
+  font-size: 24px;
+}
+
+.cust-list__desc {
+  margin: 0 0 40px;
+  color: rgba(69, 90, 100, 0.6);
+  font-size: 14px;
+}
+
+
+.cust-list-item{
+  margin: 10px;
+  border: 1px solid #ebedf0;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "工作应用",
+  "usingComponents": {
+    "tabbar": "../../components/tab-bar-component/index"
+  }
+}

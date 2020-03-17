@@ -1,0 +1,5 @@
+<view>
+  <cust-list list="{{ list }}" />
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
+<van-notify id="van-notify" />
